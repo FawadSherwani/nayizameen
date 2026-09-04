@@ -4,23 +4,44 @@
   --background: #ffffff;
   --foreground: #1f2937;
 
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
+  /* Teal — from Nayi Zameen logo */
+  --color-primary-50: #eaf5f6;
+  --color-primary-100: #cfe6e9;
+  --color-primary-200: #9fcdd3;
+  --color-primary-600: #0097b3;
+  --color-primary-700: #006679;
+  --color-primary-800: #004f5e;
+  --color-primary-900: #00333c;
+
+  /* Gold — from Nayi Zameen logo */
+  --color-accent-50: #faf6ec;
+  --color-accent-100: #f1e5c9;
+  --color-accent-200: #e2cd97;
+  --color-accent-500: #c7ad66;
+  --color-accent-600: #b69c56;
+  --color-accent-700: #93803f;
+  --color-accent-800: #6f6030;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --color-primary-50: var(--color-primary-50);
   --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
   --color-primary-600: var(--color-primary-600);
   --color-primary-700: var(--color-primary-700);
   --color-primary-800: var(--color-primary-800);
   --color-primary-900: var(--color-primary-900);
+
+  --color-accent-50: var(--color-accent-50);
+  --color-accent-100: var(--color-accent-100);
+  --color-accent-200: var(--color-accent-200);
+  --color-accent-500: var(--color-accent-500);
+  --color-accent-600: var(--color-accent-600);
+  --color-accent-700: var(--color-accent-700);
+  --color-accent-800: var(--color-accent-800);
 }
 
 body {

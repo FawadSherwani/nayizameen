@@ -1,6 +1,7 @@
 "use client";
 
-import { KeyRound, Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const quickLinks = ["Buy", "Rent", "Projects", "Commercial", "Plots", "Contact Us"];
 const resources = ["Areas Guide", "Property Trends", "Blogs", "FAQs", "Privacy Policy", "Terms & Conditions"];
@@ -49,11 +50,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <div className="grid grid-cols-1 gap-8 pb-10 md:grid-cols-5">
           <div className="md:col-span-1">
-            <div className="mb-3 flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary-600 to-primary-800">
-                <KeyRound className="h-5 w-5 text-white" />
-              </div>
-              <span className="text-lg font-bold text-gray-900">Naya Zameen</span>
+            <div className="mb-3">
+              <Image
+                src="/logo-horizontal.png"
+                alt="Nayi Zameen"
+                width={173}
+                height={25}
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-sm leading-relaxed text-gray-500">
               Naya Zameen is the most trusted real estate platform in
@@ -111,7 +115,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-2 border-t border-gray-100 pt-5 text-xs text-gray-400 sm:flex-row">
           <span>&copy; {new Date().getFullYear()} Naya Zameen. All Rights Reserved.</span>
-          <span>Made with ❤️ in Pakistan</span>
+          <span>Develop by Decasofts</span>
         </div>
       </div>
     </footer>

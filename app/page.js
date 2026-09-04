@@ -13,11 +13,11 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <FeaturedProjects />
-        <PopularLocations />
         <FeaturedProperties />
         <QuickLinksStrip />
         <TrustedBy />
         <CtaBanner />
+        <PopularLocations />
       </main>
       <Footer />
     </>

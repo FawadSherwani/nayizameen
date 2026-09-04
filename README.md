@@ -61,10 +61,14 @@ npm run build
 npm run start
 ```
 
-## Customize karna ho to
+## Branding
+
+Aapka asli logo (`public/logo-horizontal.png`) navbar aur footer mein use ho raha hai, aur icon (`app/icon.png`) favicon ke taur par lag chuka hai. Color scheme bhi logo se hi liya gaya hai:
+- **Primary (Teal)** `#006679` — buttons, links, headings ka highlight
+- **Accent (Gold)** `#B69C56` — "Add Property" jaisa primary call-to-action
 
 - **Data/content**: `lib/data.js` mein `featuredProjects`, `featuredProperties`, `popularLocations` arrays edit karein — abhi ye static/dummy data hai.
-- **Colors**: `app/globals.css` mein `--color-primary-*` variables change karein.
+- **Colors**: `app/globals.css` mein `--color-primary-*` (teal) aur `--color-accent-*` (gold) variables change karein.
 - **Images**: filhal Unsplash ke placeholder images use ho rahe hain (`next.config.mjs` mein unke domain ki permission di hui hai). Apni images `public/` folder mein daal kar path replace kar dein.
 - **Fonts**: filhal system font stack use ho raha hai (koi Google Fonts dependency nahi) taake bina internet ke bhi build ho sake. Chahein to `app/layout.js` mein `next/font/google` se koi bhi font add kar sakte hain.
 

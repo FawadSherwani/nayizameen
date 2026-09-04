@@ -35,8 +35,18 @@ export function TrustedBy() {
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
         {trustedBy.map((brand) => (
-          <span key={brand} className="text-sm font-semibold text-gray-400">
-            {brand}
+          <span
+            key={brand.name}
+            className="flex items-center gap-2 text-sm font-semibold text-gray-400"
+          >
+            <Image
+              src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`}
+              alt=""
+              width={28}
+              height={28}
+              className="h-7 w-7 rounded-md object-contain"
+            />
+            {brand.name}
           </span>
         ))}
       </div>

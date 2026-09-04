@@ -172,7 +172,7 @@
 {{-- ============ FEATURED PROPERTIES ============ --}}
 <section class="max-w-7xl mx-auto px-4 md:px-6 mt-16">
     <div class="flex items-center justify-between mb-5">
-        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Featured Properties</h2>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Featured Properties 1</h2>
         <a href="#" class="text-sm font-semibold text-primary-700 flex items-center gap-1 hover:underline">
             View All Properties <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
