@@ -1,0 +1,10 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+export const metadata = { title: "Terms & Conditions | Nayizameen" };
+
+export default function TermsPage() {
+  return <><Navbar /><main className="min-h-screen bg-slate-50"><section className="bg-primary-800 py-14 text-white"><div className="mx-auto max-w-4xl px-4 md:px-6"><p className="text-sm font-semibold tracking-wider text-primary-100">LEGAL</p><h1 className="mt-2 text-3xl font-bold md:text-4xl">Terms & Conditions</h1><p className="mt-3 text-primary-100">Last updated: September 10, 2026</p></div></section><article className="mx-auto max-w-4xl space-y-8 px-4 py-12 text-slate-600 md:px-6"><TermSection title="Using Nayizameen">You may use Nayizameen to browse, post, and enquire about property listings lawfully and responsibly. You are responsible for keeping your account information accurate.</TermSection><TermSection title="Listings and content">You must provide accurate, lawful, and non-misleading property information. Do not post content you do not own or have permission to use. We may remove content that violates these terms.</TermSection><TermSection title="Property decisions">Nayizameen provides a listing platform and does not guarantee the availability, accuracy, ownership, condition, or value of a property. Users should independently verify all property documents and details before a transaction.</TermSection><TermSection title="User conduct">Do not misuse the platform, impersonate another person, send spam, attempt unauthorized access, or use the service for unlawful activity.</TermSection><TermSection title="Changes and contact">We may update these terms as the service evolves. Continued use after an update means you accept the revised terms. Questions can be sent to info@nayizameen.com.</TermSection></article></main><Footer /></>;
+}
+
+function TermSection({ title, children }) { return <section className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-100 md:p-8"><h2 className="text-xl font-bold text-slate-900">{title}</h2><p className="mt-4 leading-7">{children}</p></section>; }

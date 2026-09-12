@@ -33,7 +33,7 @@ const locationSets = {
 function LocationGroup({ title, places, propertyType, purpose }) {
   return (
     <div>
-      <h4 className="mb-3 text-sm font-bold text-gray-900">{title}</h4>
+      <h4 className="mb-3 text-sm font-semibold text-gray-900">{title}</h4>
       <ul className="space-y-2.5">
         {places.map((place) => (
           <li key={place}>
@@ -51,7 +51,7 @@ function LocationGroup({ title, places, propertyType, purpose }) {
 function LocationCategory({ title, locations, propertyType, purpose }) {
   return (
     <div className="mt-10">
-      <h3 className="mb-6 text-xl font-bold text-gray-900 md:text-2xl">{title}</h3>
+      <h3 className="mb-6 text-xl font-semibold text-gray-900 md:text-2xl">{title}</h3>
       <div className="grid gap-8 md:grid-cols-3 md:gap-12">
         {Object.entries(locations).map(([city, places]) => (
           <LocationGroup key={city} title={city} places={places} propertyType={propertyType} purpose={purpose} />
@@ -68,14 +68,14 @@ export default function PopularLocations() {
 
   return (
     <section className="mx-auto mt-16 max-w-7xl px-4 pb-4 md:px-6">
-      <h2 className="text-xl font-bold text-gray-900 md:text-2xl">Popular Locations</h2>
+      <h2 className="text-xl font-semibold text-gray-900 md:text-2xl">Popular Locations</h2>
       <div className="mt-5 flex items-center gap-3 border-b border-gray-200 pb-4">
         {["sale", "rent"].map((tab) => (
           <button
             key={tab}
             type="button"
             onClick={() => setPurpose(tab)}
-            className={`rounded-md px-4 py-2 text-sm font-semibold transition ${purpose === tab ? "border-2 border-gray-900 text-gray-900" : "border-2 border-transparent text-gray-500 hover:text-gray-900"}`}
+            className={`rounded-md px-4 py-2 text-sm font-medium transition ${purpose === tab ? "border-2 border-gray-900 text-gray-900" : "border-2 border-transparent text-gray-500 hover:text-gray-900"}`}
           >
             For {tab === "sale" ? "Sale" : "Rent"}
           </button>

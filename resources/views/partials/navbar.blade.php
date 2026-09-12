@@ -6,7 +6,7 @@
             <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center">
                 <i data-lucide="key-round" class="w-5 h-5 text-white"></i>
             </div>
-            <span class="text-lg font-bold text-gray-900">Naya Zameen</span>
+            <span class="text-lg font-semibold text-gray-900">Nayizameen</span>
         </a>
 
         <!-- Nav Links -->
@@ -32,7 +32,7 @@
         <!-- Right Actions -->
         <div class="flex items-center gap-3 shrink-0">
             <a href="#" class="hidden sm:block text-sm font-medium text-gray-700 hover:text-primary-700">Login</a>
-            <a href="#" class="bg-primary-700 hover:bg-primary-800 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+            <a href="#" class="bg-primary-700 hover:bg-primary-800 text-white text-sm font-medium px-4 py-2 rounded-lg transition">
                 Add Property
             </a>
             <button class="lg:hidden">

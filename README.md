@@ -1,4 +1,4 @@
-# Naya Zameen — Next.js Website
+# Nayizameen — Next.js Website
 
 Ye aapke design (screenshot) ke mutabiq bani hui **Next.js homepage** hai — navbar, hero section, search box, featured projects, popular locations, featured properties, quick links, trusted-by aur contact CTA — sab kuch shamil hai. Ye ek **poora working Next.js project** hai — bas `npm install` chala kar seedha run ho jayega.
 
@@ -14,7 +14,7 @@ Build test kar ke verify kiya hua hai — `npm run build` successfully chal chuk
 ## Zip mein kya hai?
 
 ```
-naya-zameen-nextjs/
+nayizameen/
 ├── app/
 │   ├── layout.js          → root layout
 │   ├── page.js             → homepage (sab components assemble karta hai)
@@ -40,7 +40,7 @@ naya-zameen-nextjs/
 
 **1. Zip ko extract karein**, phir terminal mein us folder ke andar jayein:
 ```bash
-cd naya-zameen-nextjs
+cd nayizameen
 ```
 
 **2. Dependencies install karein:**

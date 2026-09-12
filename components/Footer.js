@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const quickLinks = ["Buy", "Rent", "Projects", "Commercial", "Plots", "Contact Us"];
-const resources = ["Areas Guide", "Property Trends", "Blogs", "FAQs", "Privacy Policy", "Terms & Conditions"];
+const resources = [{ label: "Areas Guide", href: "/area-guide" }, { label: "Property Trends", href: "#" }, { label: "Blogs", href: "#" }, { label: "FAQs", href: "/faqs" }, { label: "Privacy Policy", href: "/privacy-policy" }, { label: "Terms & Conditions", href: "/terms-and-conditions" }];
 
 // Simple inline social icons (lucide-react no longer ships brand/logo icons)
 const socialIcons = {
@@ -53,14 +54,14 @@ export default function Footer() {
             <div className="mb-3">
               <Image
                 src="/logo-horizontal.png"
-                alt="Nayi Zameen"
+                alt="Nayizameen"
                 width={173}
                 height={25}
                 className="h-8 w-auto"
               />
             </div>
             <p className="text-sm leading-relaxed text-gray-500">
-              Naya Zameen is the most trusted real estate platform in
+              Nayizameen is the most trusted real estate platform in
               Pakistan. We help you buy, sell, rent and invest in the best
               properties across the country.
             </p>
@@ -70,23 +71,22 @@ export default function Footer() {
           <FooterColumn title="Resources" items={resources} />
 
           <div>
-            <h4 className="mb-3 font-semibold text-gray-900">Contact Info</h4>
+            <h4 className="mb-3 font-medium text-gray-900">Contact Info</h4>
             <ul className="space-y-3 text-sm text-gray-500">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4" /> +92 307 111 6563
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4" /> info@nayazameen.com
+                <Mail className="h-4 w-4" /> info@nayizameen.com
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="mt-0.5 h-4 w-4" /> Office # 1, 2nd Floor,
-                Plaza No. 45, Main Boulevard, DHA Phase 6, Lahore.
+                <MapPin className="mt-0.5 h-4 w-4" /> Madina Town Susan Road FSD.
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="mb-3 font-semibold text-gray-900">Newsletter</h4>
+            <h4 className="mb-3 font-medium text-gray-900">Newsletter</h4>
             <p className="mb-3 text-sm text-gray-500">
               Subscribe to get the latest property updates.
             </p>
@@ -98,7 +98,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="rounded-lg bg-primary-700 px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-800"
+                className="rounded-lg bg-primary-700 px-4 py-2 text-sm font-medium text-white transition hover:bg-primary-800"
               >
                 Subscribe
               </button>
@@ -114,7 +114,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-2 border-t border-gray-100 pt-5 text-xs text-gray-400 sm:flex-row">
-          <span>&copy; {new Date().getFullYear()} Naya Zameen. All Rights Reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Nayizameen. All Rights Reserved.</span>
           <span>Develop by Decasofts</span>
         </div>
       </div>
@@ -125,15 +125,13 @@ export default function Footer() {
 function FooterColumn({ title, items }) {
   return (
     <div>
-      <h4 className="mb-3 font-semibold text-gray-900">{title}</h4>
+      <h4 className="mb-3 font-medium text-gray-900">{title}</h4>
       <ul className="space-y-2 text-sm text-gray-500">
-        {items.map((item) => (
-          <li key={item}>
-            <a href="#" className="hover:text-primary-700">
-              {item}
-            </a>
-          </li>
-        ))}
+        {items.map((item) => {
+          const label = typeof item === "string" ? item : item.label;
+          const href = typeof item === "string" ? "#" : item.href;
+          return <li key={label}><Link href={href} className="hover:text-primary-700">{label}</Link></li>;
+        })}
       </ul>
     </div>
   );

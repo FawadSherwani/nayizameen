@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Naya Zameen - Pakistan\'s Trusted Property Portal')</title>
+    <title>@yield('title', 'Nayizameen - Pakistan\'s Trusted Property Portal')</title>
 
     <!-- Tailwind CDN (no build step needed) -->
     <script src="https://cdn.tailwindcss.com"></script>

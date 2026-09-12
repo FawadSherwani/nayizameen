@@ -1,7 +1,7 @@
 {
-    "name": "naya-zameen/website",
+    "name": "nayizameen/website",
     "type": "project",
-    "description": "Naya Zameen - Pakistan's Trusted Property Portal (Laravel)",
+    "description": "Nayizameen - Pakistan's Trusted Property Portal (Laravel)",
     "keywords": ["laravel", "real-estate", "property"],
     "license": "MIT",
     "require": {
